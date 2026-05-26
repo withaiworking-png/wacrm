@@ -78,7 +78,7 @@ export function WhatsAppConfig() {
         setPhoneNumberId(data.phone_number_id || '');
         setWabaId(data.waba_id || '');
         setAccessToken(MASKED_TOKEN);
-        setVerifyToken('');
+        setVerifyToken(data.verify_token || '');
         setTokenEdited(false);
       } else {
         setConfig(null);
